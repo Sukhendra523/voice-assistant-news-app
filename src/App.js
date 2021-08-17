@@ -6,9 +6,9 @@ import alanBtn from "@alan-ai/alan-sdk-web";
 import NewsCards from "./components/NewsCards/NewsCards";
 import Modal from "./components/Modal/Modal";
 import useStyles from "./styles";
-
-const alankey =
-  "0e48c8ebf08cae17bd70da30ee38c2642e956eca572e1d8b807a3e2338fdd0dc/stage";
+// import dotenv from 'dotenv'
+// const env = dotenv.config()
+const alankey =process.env.REACT_APP_ALAN_KEY
 
 const App = () => {
   const [activeArticle, setActiveArticle] = useState(0);

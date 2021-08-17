@@ -39,8 +39,9 @@ const NewsCards = ({ articles, activeArticle }) => {
           alignItems="stretch"
           spacing={3}
         >
-          {infoCards.map((infoCard) => (
+          {infoCards.map((infoCard,i) => (
             <Grid
+              key={i}
               item
               xs={12}
               sm={6}
@@ -81,7 +82,7 @@ const NewsCards = ({ articles, activeArticle }) => {
         spacing={3}
       >
         {articles.map((article, i) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} style={{ display: "flex" }}>
+          <Grid key={i} item xs={12} sm={6} md={4} lg={3} style={{ display: "flex" }}>
             <NewsCard activeArticle={activeArticle} i={i} article={article} />
           </Grid>
         ))}

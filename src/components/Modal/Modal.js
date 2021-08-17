@@ -78,8 +78,8 @@ const Modal = ({ isOpen, setIsOpen, showFeedback }) => {
               "Science",
               "Sports",
               "Technology",
-            ].map((category) => (
-              <Chip label={category} color="primary" className={classes.chip} />
+            ].map((category,i) => (
+              <Chip key={i} label={category} color="primary" className={classes.chip} />
             ))}
           </div>
         </div>
@@ -102,8 +102,8 @@ const Modal = ({ isOpen, setIsOpen, showFeedback }) => {
           <Typography variant="h5">News by Terms</Typography>
           <div className={classes.chipContainer}>
             {["Donald Trump", "Bitcoin", "PlayStation 5", "Smartphones"].map(
-              (term) => (
-                <Chip label={term} color="primary" className={classes.chip} />
+              (term,i) => (
+                <Chip key={i} label={term} color="primary" className={classes.chip} />
               )
             )}
             <Chip label="...and more" className={classes.chip} />
@@ -153,8 +153,8 @@ const Modal = ({ isOpen, setIsOpen, showFeedback }) => {
               "IGN",
               "Buzzfeed",
               "ABC News",
-            ].map((source) => (
-              <Chip label={source} color="primary" className={classes.chip} />
+            ].map((source,i) => (
+              <Chip key={i} label={source} color="primary" className={classes.chip} />
             ))}
             <Chip label="...and more" className={classes.chip} />
           </div>

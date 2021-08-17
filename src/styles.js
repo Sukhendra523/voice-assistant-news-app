@@ -69,6 +69,7 @@ export default makeStyles((theme) => ({
     borderRadius: "15%",
     padding: "0 5%",
     margin: "3% 0",
+    width:"60%",
     [theme.breakpoints.down("sm")]: {
       height: "35vmin",
     },
